@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title></title>
+</head>
+<body>
+<!--Menu-->
+<div class="menu-toggle" onclick="toggleMenu()">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</div>
+
+<nav class="menu">
+  <a href="#home" class="scroll-link">Home</a>
+  <a href="#about" class="scroll-link">About</a>
+  <a href="#service" class="scroll-link">Projects</a>
+  <a href="#contact" class="scroll-link">Contact</a>
+</nav>
+
+<!-- Sec 1 -->
+<div class="home">
+    <div class="profile">
+     <h2>MUHAMMED <span>SHAMEEL</span></h2>
+     <br>
+     <h3>Web Develeper</h3>
+     <button href="alenalex.me">Explore</button>
+    </div>
+	
+</div>
+<!-- Sec 2 -->
+<div class="about" id="about">
+     <div class="card">
+        <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?semt=ais_hybrid">
+        <br>
+ 
+        <h2>Muhammed shameel</h2>
+ 
+        <p>"Passionate and detail-oriented Web Developer with experience in designing, developing, and maintaining responsive websites and web applications.
+        Proficient in front-end and back-end technologies, including <i>HTML, CSS, JavaScript, React, and Node.js.</i>Skilled in optimizing performance, enhancing user experience, and implementing scalable solutions.
+        Adept at troubleshooting, debugging, and collaborating with cross-functional teams to deliver high-quality digital products. Always eager to learn new technologies and improve development workflows."</p>
+
+      </div>
+ </div>
+ 
+ <!-- Sec 3 -->
+ 
+ <div class="service" id="service">
+ 	<h1 class="heading"><u>Projects</u></h1>
+ 	
+ 	<div class="con">
+ 		<div class="box1">
+ 			<h3>Ecom Website</h3>
+ 			<p>I built a modern, responsive e-commerce website with secure payments, intuitive navigation, and optimized performance to enhance user experience and drive sales.</p>
+ 			<button>View</button>
+ 		</div>
+ 		<div class="box2">
+ 			<img src="content://media/external/downloads/1000124767">
+ 		</div>
+ 	</div>
+ 	<div class="con">
+ 		<div class="box2">
+ 			<img src="content://media/external/downloads/1000124765">
+ 		</div>
+ 		<div class="box1">
+ 			<h3>Ecom Website</h3>
+ 			<p>I built a modern, responsive e-commerce website with secure payments, intuitive navigation, and optimized performance to enhance user experience and drive sales.</p>
+ 			<button>View</button>
+ 		</div>
+ 	</div>
+ 	<div class="con">
+ 		<div class="box1">
+ 			<h3>Ecom Website</h3>
+ 			<p>I built a modern, responsive e-commerce website with secure payments, intuitive navigation, and optimized performance to enhance user experience and drive sales.</p>
+ 			<button>View</button>
+ 		</div>
+ 		<div class="box2">
+ 			<img src="https://static.vecteezy.com/system/resources/thumbnails/034/759/256/small_2x/file-or-document-3d-icon-illustration-png.png">
+ 		</div>
+ 	</div>
+ 	<div>
+ 	
+ 	</div>
+ </div>
+ <!-- sec 4 -->
+ <div class="contact" id="contact">
+ 	<h1><u>Contact</u></h1>
+ 	<p>For any questions or inquiries, feel free to reach out! You can contact us via [email/phone number] or send us a direct message on social media. We’re here to help!</p>
+ 	<br>
+ 	<div class="form">
+ 	 <input type="text" placeholder="Name" class="input1" id="username">
+ 	 <input type="email" placeholder="E-mail" class="input1" id="mail">
+ 	 <input type="text" placeholder="Message" class="input2">
+ 	 <button onclick="snd()">Submit</button>
+ 	</div>
+ 	<div class="icons">
+		 <a href="https://api.whatsapp.com/send?phone=7511159923&text=Hello" ><img src="https://cdn-icons-png.freepik.com/256/3991/3991765.png?ga=GA1.1.1301185318.1741397547&semt=ais_hybrid"></a>
+	 	 <a href="tel:+917511159923" ><img src="content://media/external/downloads/1000124819"></a>
+	 	 <a href="mailto:muhammedshameel@gmail.com" ><img  src="https://thumbs.dreamstime.com/b/%D0%BF%D0%B5%D1%87%D0%B0%D1%82%D1%8C-201003176.jpg?w=576"></a>
+	 	 <a href="instagram.com" ><img src="https://cdn.pixabay.com/photo/2021/06/15/12/14/instagram-6338393_1280.png"></a>
+	 </div>
+	 <br>
+	 <button id="topBtn">Back to Top</button>
+	 <h2>-- End --</h2>
+ </div>
+
+
+</body>
+</html>
+<style type="text/css">
+body{
+font-family: 'Poppins', sans-serif;
+/* font-family: Arial, sans-serif;*/
+  margin: 0;
+  background: #252525;
+}
+.menu-toggle {
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+.bar {
+  width: 90%;
+  height: 5px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.4s;
+  opacity:70%;
+}
+.menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 200px;
+  height: 100vh;
+  background:#252525;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: 0.4s ease-in-out;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  transition: 0.3s;
+}
+.menu a:hover {
+  background:lightgreen;
+  color:#252525;
+  transform:translateX(5px)  translateY(-2px);
+}
+/* Active state */
+.menu.active {
+  left: 0;
+}
+.menu-toggle.active .bar:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+  background:white;
+}
+.menu-toggle.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle.active .bar:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+  background:white;
+}
+/*Section 1*/
+.home{
+height:100vh;
+width:100vw;
+background-color:black;
+margin:0px;
+display: flex;
+justify-content: center;  /* Centers horizontally */
+align-items: center;  /* Centers vertically */
+z-index:-1;
+}
+.profile h2{
+color:white;
+}
+.profile h2 span{
+color:red;
+}
+.profile h3{
+color:white;
+opacity:.5;
+text-align:center;
+}
+.profile button{
+color:white;
+background:transparent;
+border:1px solid white;
+border-radius:30px;
+padding:10px 25px;
+font-weight:bold;
+height:50px;
+position:relative;
+left:27%;
+margin-top:70px;
+transition:0.3s linear;
+cursor: pointer;
+}
+.profile button:hover{
+color:black;
+background:white;
+border:1px solid white;
+}
+/*section 2*/
+.about{
+background-color:black;
+height:90vh;
+display: flex;
+justify-content: center;  /* Centers horizontally */
+align-items: center;  /* Centers vertically */
+z-index:-1;
+}
+.card{
+display:flex;
+align-items:center;
+width:300px;
+border:solid 1px transparent;
+hight:100%px;
+border-radius:15px;
+display: flex;
+justify-content: center;  /* Centers horizontally */
+align-items: center;
+flex-direction:column;
+padding:0px;
+}
+.card img{
+height:100px;
+width:100px;
+border-radius:50%;
+margin:10px;
+transition:0.3s ease-out;
+}
+.card img:hover{
+transform:scale(1.2);
+cursor:crosshair;
+}
+.card h2{
+color:white;
+opacity:90%;
+}
+.card p{
+color:white;
+text-align:center;
+padding:12px;
+font-weight:thin;
+opacity:70%;
+}
+/* Section 3*/
+.service{
+height:150vh;
+background-color:black;
+position:relative;
+top:0px;
+padding:15px;
+border-top:1px double white;
+}
+.heading{
+text-align:center;
+color:white;
+font-weight:bold;
+margin:10px;
+position:relative;
+top:10px;
+}
+.con{
+display:flex;
+height:38vh;
+margin:2px;
+margin-top:10px;
+border:1px solid ;
+border-radius:20px;
+padding:10px;
+animation-name:ab;
+animation-timeline:view();
+}
+.box1{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+.con h3{
+color:white;
+margin:15px;
+position:relative;
+top:60px;
+}
+.con p{
+color:white;
+opacity:85%;
+text-align:center;
+position:relative;
+top:40px;
+}
+.con button{
+color:white;
+background:transparent;
+border:1px solid white;
+border-radius:30px;
+padding:5px 25px;
+height:40px;
+font-weight:bold;
+position:relative;
+top:50px;
+transition:0.2s linear;
+cursor: pointer;
+}
+.con button:hover{
+color:black;
+background:white;
+cursor: pointer;
+}
+.con img{
+height:130px;
+position:relative;
+top:30%;
+}
+@keyframes ab{
+0%{
+opacity:0%;
+transform:translateX(-100px)
+}
+15%{
+opacity:0%
+}
+40%{
+opacity:100%;
+transform:translateX(0px)
+}
+50%{
+opacity:100%;
+}
+100%{
+opacity:70%
+transform:translateX(100px)
+}
+}
+/*section 4*/
+.contact{
+height:100vh;
+background-color:black;
+display:flex;
+flex-direction:column;
+align-items:space-around;
+}
+.contact h1{
+color:white;
+margin:20px;
+text-align:center;
+}
+.contact p{
+color:white;
+margin:20px;
+opacity:70%;
+}
+.icons{
+display:flex;
+justify-content:space-around;
+
+}
+.contact img{
+height:50px;
+border-radius:30px;
+margin:20px;
+transition:0.2s linear;
+animation:icons 1s linear 1;
+animation-timeline:view();
+}
+.contact img:hover{
+transform:scale(1.1);
+}
+.form{
+display:flex;
+flex-direction:column;
+justify-content:space-around;
+padding:10px;
+margin:20px;
+}
+.input1{
+background-color:black;
+border:1px solid white;
+color:white;
+margin:10px;
+padding:2px;
+}
+.input2{
+background-color:black;
+border:1px solid white;
+color:white;
+margin:10px;
+padding:3px;
+height:10vh;
+
+}
+.input1,.input2:focus {
+  outline: none;
+  box-shadow: none;
+}
+.form button{
+color:white;
+background:black;
+height:23px;
+border:1px solid white;
+width:80px;
+margin:10px;
+position:relative;
+left:40%;
+}
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: none; /* Initially hidden */
+  background-color:transparent;
+  color: white;
+  border:1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  opacity:75%;
+  backdrop-filter:blur(10px);
+}
+
+#topBtn:hover {
+  background-color:white;
+  color:black;
+  }
+@keyframes icons{
+  0%{
+  transform:translateY(30px) scale(0.5);
+  }
+  20%{
+  transform:translateX(0px) scale(1);
+  }
+  100%{
+  transform:translateX(0px) scale(1);
+  }
+}
+.contact h2{
+color:white;
+text-align:center;
+font-weight:300;
+opacity:75%;
+}
+</style>
+<script type="text/javascript">
+function toggleMenu() {
+  document.querySelector(".menu").classList.toggle("active");
+  document.querySelector(".menu-toggle").classList.toggle("active");
+}
+
+
+document.querySelectorAll('.scroll-link').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // Prevent default jump behavior
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+
+    // Close the menu after clicking
+    document.querySelector(".menu").classList.remove("active");
+    document.querySelector(".menu-toggle").classList.remove("active");
+  });
+});
+
+const topButton = document.getElementById("topBtn");
+
+// Show button when scrolling down
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    topButton.style.display = "block";
+  } else {
+    topButton.style.display = "none";
+  }
+};
+
+// Scroll to top when clicked
+topButton.onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+var name=document.getElementById("username");
+var mail=document.getElementById("mail");
+function snd(){
+alert("Thank you for your response! message have sent!");
+}
+console.log(name);
+</script>
